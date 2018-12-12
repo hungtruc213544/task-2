@@ -1,0 +1,42 @@
+# Task2
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+
+## Check that you have node and npm installed
+
+To check if you have Node.js installed, run this command in your terminal: `node -v`
+To confirm that you have npm installed you can run this command in your terminal: `npm -v`
+
+If haven't you can download and install from link: `https://nodejs.org/en/`
+
+## Install package for project
+
+Run `npm i` for project.
+
+## Run project 
+
+Run `npm start` for localhost. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

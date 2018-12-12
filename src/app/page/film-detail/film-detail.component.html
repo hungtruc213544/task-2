@@ -1,0 +1,56 @@
+<div class="row fix-top">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <section class="detail-feature">
+            <article>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
+                        <div class="detail-feat-img">
+                            <img class="img-fluid" src="../../../assets/banner.jpg">
+                        </div>
+                    </div>
+                    <div class="details col-md-8 col-sm-8 col-xs-12">
+                        <h2 class="detail-title">{{dataCompleted.title}}</h2>
+                        <div class="detail-info">
+                            <div class="detail-info-row"><label>Producer:&nbsp;</label>
+                                <div class="detail-info-right"><a href="">{{dataCompleted.producer}}</a></div>
+                            </div>
+                            <div class="detail-info-row"><label>Director:&nbsp;</label>
+                                <div class="detail-info-right"><a href="">{{dataCompleted.director}}</a></div>
+                            </div>
+                            <div class="detail-info-row"><label>Characters:&nbsp;</label>
+                                <div class="detail-info-right"><a *ngFor="let character of dataCharacters" href="">{{character.name}}, </a></div>
+                            </div>
+                            <div class="detail-info-row"><label>Planets:&nbsp;</label>
+                                <div class="detail-info-right"><a *ngFor="let planet of dataPlanets" href="">{{planet.name}}, </a></div>
+                            </div>
+                            <div class="detail-info-row"><label>Vehicles:&nbsp;</label>
+                                <div class="detail-info-right"><a *ngFor="let vehicle of dataVehicles" href="">{{vehicle.name}}, </a></div>
+                            </div>
+                            <div class="detail-info-row"><label>Starships:&nbsp;</label>
+                                <div class="detail-info-right"><a *ngFor="let starship of dataStarships" href="">{{starship.name}}, </a></div>
+                            </div>
+                            <div class="detail-info-row"><label>Species:&nbsp;</label>
+                                <div class="detail-info-right"><a *ngFor="let specie of dataSpecies" href="">{{specie.name}}, </a></div>
+                            </div>
+                            <div class="detail-info-row"><label>Release Date:&nbsp;</label>
+                                <div class="detail-info-right">{{dataCompleted.release_date}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row detail-description">
+                    <div class="col-md-12 col sm-12 col-xs-12">
+                        <div class="content-text">
+                            <section id="info">
+                                <h3>Description</h3>
+                                <div class="content-text-actors-info content-text"><br>
+                                    <p>{{dataCompleted.opening_crawl}}</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</div>

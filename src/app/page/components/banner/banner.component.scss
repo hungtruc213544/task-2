@@ -1,0 +1,39 @@
+.minh-100vh {
+    min-height: 100vh;
+    .bg-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        background-image: url(../../../../assets/banner.jpg);
+        transform: translate3d(0px, 0px, 0px);
+        &.overlay {
+            &::before {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                content: '';
+                background-color: rgba(31, 39, 73, .5);
+            }
+        }
+        &.overlay-60 {
+            &::before {
+                background-color: rgba(31, 39, 73, .6) !important;
+            }
+        }
+    }
+}
+
+.h-100vh {
+    height: 100vh;
+}
